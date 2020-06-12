@@ -7,15 +7,12 @@ public class LoginTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WebDriver driver = Base.getDriver();
-		driver.get("http://automationpractice.com");
+		driver.get("http://wplearning.test/wp-admin");
+		 driver.findElement(By.id("user_login")).sendKeys("admin");
+		 driver.findElement(By.id("user_pass")).sendKeys("admin");
+		 driver.findElement(By.id("wp-submit")).click();
+		 driver.findElement(By.linkText("")).click();
 		
-		WebElement element= driver.findElement(By.className("login"));
-		element.click();
-		//email & password sendkeys
-		element=driver.findElement(By.id("email"));
-		element.sendKeys("admin@gmail.com");
-		
-		driver.findElement(By.id("passwd")).sendKeys("test123456");
 		
 
 	}

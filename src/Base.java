@@ -7,10 +7,12 @@ public class Base {
 
 	public static WebDriver getDriver()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		return driver;
+		
+		  System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		  WebDriver driver = new ChromeDriver();
+		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  return driver;
+		 
 	}
 	
 }
