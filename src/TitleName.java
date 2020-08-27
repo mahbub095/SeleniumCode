@@ -6,9 +6,10 @@ public class TitleName {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","C:\\c\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","D:\\d\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://mahbub121.000webhostapp.com/");
+		driver.get("https://shopping.techsomethingbd.com/");
+		System.out.println("Your Website Name is");
 		System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
         driver.close();
