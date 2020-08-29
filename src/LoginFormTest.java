@@ -6,11 +6,8 @@ public class LoginFormTest {
 	
 	public void setup() {
 		
-		  System.setProperty("webdriver.chrome.driver","C:\\c\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\c\\chromedriver.exe");
 		driver = new ChromeDriver();
-
-		 
-
 		String baseUrl = "http://automationpractice.com/index.php?controller=authentication";
 		driver.manage().window().maximize();
 		driver.get(baseUrl);

@@ -8,10 +8,10 @@ public class LoginTest {
 		// TODO Auto-generated method stub
 		WebDriver driver = Base.getDriver();
 		driver.get("http://wplearning.test/wp-admin");
-		 driver.findElement(By.id("user_login")).sendKeys("admin");
-		 driver.findElement(By.id("user_pass")).sendKeys("admin");
-		 driver.findElement(By.id("wp-submit")).click();
-		 driver.findElement(By.linkText("")).click();
+		driver.findElement(By.id("user_login")).sendKeys("admin");
+		driver.findElement(By.id("user_pass")).sendKeys("admin");
+		driver.findElement(By.id("wp-submit")).click();
+		driver.findElement(By.linkText("")).click();
 		
 		
 
